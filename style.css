@@ -47,3 +47,7 @@ header #header main>p{position:absolute;bottom:-320px;font-family:"Century Gothi
 #feature main form fieldset input{width:234px;background:transparent url(images/input.png) center top;padding:3px 5px 4px;font-size:18px;color:white}
 #feature main form fieldset input[type="tel"]{background-position:center 47px;margin-top:6px}
 #feature main form fieldset button{background:#b6b6b6;background:linear-gradient(to bottom, #f7f7f7, #7f7f7f);box-shadow:1px 4px 4px rgba(0,0,0,.7);font-family:"Myriad Pro";font-size:18px;text-transform:uppercase;cursor:pointer;margin-top:20px}
+
+footer{background:url(images/map.jpg) center top}
+footer main{height:697px}
+footer main form{background:#e2e2e2;}
