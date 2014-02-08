@@ -1,20 +1,32 @@
-
 @charset "utf-8";
-@font-face{font-family:"PF Din Cond Pro Light";   src:local("PF Din Cond Pro Light"), url(fonts/pfdintextcondpro-light.TTF) format('truetype');}
+@font-face{font-family:"Myriad Pro";            src:local("Myriad Pro"),             url(fonts/MyriadPro-Regular.otf)    format('opentype');}
+@font-face{font-family:"Myriad Pro Cond";       src:local("Myriad Pro Cond"),        url(fonts/MyriadPro-Cond.otf)       format('opentype');}
+@font-face{font-family:"Myriad Pro Cond Bold";  src:local("Myriad Pro Cond Bold"),   url(fonts/MyriadPro-CondBold.otf)   format('opentype');}
+@font-face{font-family:"Myriad Pro Cond Italic";src:local("Myriad Pro Cond Italic"), url(fonts/MyriadPro-CondItalic.otf) format('opentype');}
+@font-face{font-family:"Open Sans Cond Light";  src:local("Open Sans Cond Light"),   local("Open Sans Condensed Light"), url(fonts/OpenSans-CondLight.ttf) format('truetype');}
+@font-face{font-family:"Century Gothic";        src:local("Century Gothic"), 				 url(fonts/GOTHIC.TTF) format('truetype');}
+@font-face{font-family:"Century Gothic Bold";   src:local("Century Gothic Bold"), 	 url(fonts/GOTHICB.TTF) format('truetype');}
+@font-face{font-family:"PF Din Cond Pro Light"; src:local("PF Din Cond Pro Light"),  url(fonts/pfdintextcondpro-light.TTF) format('truetype');}
 *{padding:0;margin:0}
 body{color:#000;background:#fff;font:16px/24px "Trebuchet MS",Calibri,sans-serif}
 header,main,footer,nav,aside,section,article,figure,figcaption{display:block}
 .clear{clear:both}
+.left{float:left}
+.right{float:right}
 
 main{width:999px;margin:0 auto;position:relative}
-header #top{height:137px;background:rgba(0,0,0,.7);}
+header{height:856px;background:white url(images/top.png) center top no-repeat;}
+header #top{height:137px;background:rgba(0,0,0,.7) url(images/logo.png) center center no-repeat;color:white}
+header #top h2{font-family:"Century Gothic";font-size:24px;padding-top:40px}
+header #top h1{font-family:"Myriad Pro Cond Bold";font-size:48px;text-transform:uppercase;padding-top:40px}
+header #top p{font-family:"Myriad Pro Cond";font-size:24px}
+header #top div img{cursor:pointer;margin-top:6px}
+header #header div{text-align:center;margin-top:90px;color:white;background:rgba(0,0,0,.5);padding:30px 0}
+header #header div h1{font-family:"Century Gothic Bold";font-size:65px;line-height:65px}
+header #header div p{font-family:"Century Gothic";font-size:24px;margin-top:20px}
 
 #stars {background:#f4f4f4}
-#stars ol{text-align:center; list-style:none; }
+#stars ol{text-align:center;list-style:none}
 #stars ol.one{margin-top:20px}
-#stars ol li{position:relative; display:inline-block; width:250px; 
- vertical-align: top; font:20px "PF Din Cond Pro"; line-height:26px; color: #545454; padding-top:25px; margin: 5px 5px 20px 20px;
- background:url(images/10.png) no-repeat center 0;
- 
- }
-#stars ol.three li{width:999px;  background:url(images/9.png) no-repeat center 0}
+#stars ol li{position:relative;display:inline-block;width:250px;vertical-align:top;font:20px "PF Din Cond Pro";line-height:26px;color:#545454;padding-top:25px;margin:5px 5px 20px 20px;background:url(images/10.png) no-repeat center 0}
+#stars ol.three li{width:999px;background:url(images/9.png) no-repeat center 0}
