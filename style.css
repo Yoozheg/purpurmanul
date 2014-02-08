@@ -24,6 +24,7 @@ header #top div img{cursor:pointer;margin-top:6px}
 header #header div{text-align:center;margin-top:90px;color:white;background:rgba(0,0,0,.5);padding:30px 0}
 header #header div h1{font-family:"Century Gothic Bold";font-size:65px;line-height:65px}
 header #header div p{font-family:"Century Gothic";font-size:24px;margin-top:20px}
+header #header form{width:314px;height:238px;background:url(images/topform.png) top left no-repeat;margin-top:60px;margin-right:30px}
 
 #stars {background:#f4f4f4}
 #stars ol{text-align:center;list-style:none}
