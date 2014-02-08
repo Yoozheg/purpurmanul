@@ -6,3 +6,7 @@ header,main,footer,nav,aside,section,article,figure,figcaption{display:block}
 
 main{width:999px;margin:0 auto;position:relative}
 header #top{height:137px;background:rgba(0,0,0,.7);}
+
+#stars ol{text-align:center; list-style:none;}
+#stars ol li{position:relative; display:inline-block; width:300px; margin: 40px 5px 20px 5px; padding-top: 160px; vertical-align: top; font:24px "Open Sans Cond Light"; line-height:26px;}
+#stars ol li.three{width:999px}
