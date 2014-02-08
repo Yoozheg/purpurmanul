@@ -15,7 +15,7 @@ header,main,footer,nav,aside,section,article,figure,figcaption{display:block}
 .right{float:right}
 
 main{width:999px;margin:0 auto;position:relative}
-header{height:856px;background:white url(images/top.png) center top no-repeat}
+header{height:856px;background:transparent url(images/top.png) center top no-repeat}
 header #top{height:137px;background:rgba(0,0,0,.7) url(images/logo.png) center center no-repeat;color:white}
 header #top h2{font-family:"Century Gothic";font-size:24px;padding-top:40px}
 header #top h1{font-family:"Myriad Pro Cond Bold";font-size:48px;text-transform:uppercase;padding-top:40px}
@@ -31,13 +31,19 @@ header #header form input:valid{background:url(images/valid.png) 212px center no
 header #header form img{cursor:pointer}
 header #header main>p{position:absolute;bottom:-320px;font-family:"Century Gothic Bold";font-size:30px;line-height:40px;color:white;left:0;right:340px;text-align:center}
 
-#stars {background:#f4f4f4}
+#stars{background:#f4f4f4}
 #stars ol{text-align:center;list-style:none}
-#stars ol.one{margin-top:20px}
 #stars ol li{position:relative;display:inline-block;width:250px;vertical-align:top;font:20px "PF Din Cond Pro";line-height:26px;color:#545454;padding-top:25px;margin:5px 5px 20px 20px;background:url(images/10.png) no-repeat center 0}
 #stars ol.three li{width:999px;background:url(images/9.png) no-repeat center 0}
 
 #feature{background:url(images/feature.png) center top}
-#feature main{height:506px}
+#feature main{height:506px;color:white}
 #feature main h2{background:rgba(0,0,0,.6);text-align:right;color:white;font-family:"Century Gothic Bold";font-size:48px;line-height:54px;padding:6px 10px 20px;margin-top:40px}
 #feature main p{background:rgba(0,0,0,.5);color:white;font-family:"Open Sans Cond Light";font-size:30px;line-height:30px;padding:10px;position:absolute;bottom:0}
+#feature main form{position:absolute;right:40px;bottom:48px;width:242px;height:225px;background:url(images/form.png);padding:14px 40px;margin-top:10px}
+#feature main form fieldset{border:none;text-align:center}
+#feature main form fieldset legend{font-family:"Myriad Pro";font-size:24px;text-shadow:0 -1px 1px rgba(0,0,0,.5)}
+#feature main form fieldset input,#feature main form fieldset button{width:240px;height:40px;border-radius:4px;text-align:center;border:none;margin-top:10px}
+#feature main form fieldset input{width:234px;background:transparent url(images/input.png) center top;padding:3px 5px 4px;font-size:18px;color:white}
+#feature main form fieldset input[type="tel"]{background-position:center 47px;margin-top:6px}
+#feature main form fieldset button{background:#b6b6b6;background:linear-gradient(to bottom, #f7f7f7, #7f7f7f);box-shadow:1px 4px 4px rgba(0,0,0,.7);font-family:"Myriad Pro";font-size:18px;text-transform:uppercase;cursor:pointer;margin-top:20px}
