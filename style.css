@@ -38,11 +38,12 @@ header #header main>p{position:absolute;bottom:-320px;font-family:"Century Gothi
 #it ol li{display:inline-block;color:#e29fb1;text-transform:uppercase;text-align:center;font-family:'Myriad Pro Cond'; padding: 0 20px;}
 
 #green{background: url(images/green_section_back.png) left top repeat-x}
+#green main>p{font-family:PFDinTextCondProLight;font-size:24px;font-weight:lighter;padding-top:20px}
 #green>main>div{background:url(images/green_back.jpg) repeat-x;height:543px;text-align:center;width:1631px;margin-left:-316px}
-#green p{font-family:PFDinTextCondProLight;font-size:24px;font-weight:lighter;padding-top:20px}
-#green #count {width:430px}
+#green>main>div>main>div{background:url(images/green_bottom.png) bottom center no-repeat,url(images/green_left.png) left top no-repeat;height:376px;border:1px solid red}
+#green h2{font-family:"PFDinTextCondProLight";font-size:36px;line-height:36px;text-align:left;margin-top:70px;margin-left:320px}
+#green h2 span.price{font-size:48px;line-height:48px;color:white;margin-left:10px}
 #green form{width:255px}
-/*#green>main>div{background:url(images/green_bottom.png)}*/
 
 #propose{background:#f7f7f7 url(images/6.jpg) center top}
 #propose p{text-align:center;font:24px "PFDinTextCondProLight"; color:#7d7d7d; padding-top:52px;}
