@@ -42,8 +42,6 @@ header #header main>p{position:absolute;bottom:-320px;font-family:"Century Gothi
 #green #count {width:430px;}
 #green form{width:255px;}
 #green>main>div{background:url(images/green_bottom.png)}
-<<<<<<< HEAD
-=======
 
 #propose{background:#f7f7f7 url(images/6.jpg) center top}
 #propose p{text-align:center;font:24px "PFDinTextCondProLight"; color:#7d7d7d; padding-top:52px;}
@@ -51,7 +49,6 @@ header #header main>p{position:absolute;bottom:-320px;font-family:"Century Gothi
 #propose ol li{position:relative;display:inline-block;width:420px;vertical-align:top;font:20px "PFDinTextCondProLight";line-height:26px;
 padding-left:35px;margin:5px 5px 20px 20px;background:url(images/7.png) no-repeat left 0}
 
->>>>>>> origin/master
 
 
 #propose{background:#f7f7f7 url(images/6.jpg) center top}
