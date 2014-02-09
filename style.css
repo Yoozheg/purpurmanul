@@ -56,10 +56,11 @@ padding-left:35px;margin:5px 5px 20px 20px;background:url(images/7.png) no-repea
 #pink ol{text-align:left; list-style:none;margin-top:80px;background:url(images/pink_left.png) no-repeat top left;padding-left:109px;padding-bottom:40px}
 #pink ol li{position:relative;display:inline-block;width:370px;font:22px "Open Sans Cond Light";line-height:22px;color:#fafafa;padding-left:40px;padding-bottom:20px;margin:0px 5px 0px 20px;background:url(images/pink_list.png) no-repeat left 35px}
 
-#stars{background:#f4f4f4}
-#stars ol{text-align:center;list-style:none}
-#stars ol li{position:relative;display:inline-block;width:250px;vertical-align:top;font:20px "PFDinTextCondProLight";color:#545454;padding-top:25px;margin:5px 5px 20px 20px;background:url(images/10.png) no-repeat center 0}
-#stars ol.three li{width:999px;background:url(images/9.png) no-repeat center 0}
+#stars{background:#f4f4f4 url(images/8.jpg) center top no-repeat}
+#stars ol{text-align:center;list-style:none;padding-top:35px;}
+#stars ol li{position:relative;display:inline-block;width:255px;vertical-align:top;font:20px "PFDinTextCondProLight";color:#545454;padding-top:25px;margin:5px 5px 0px 20px;background:url(images/10.png) no-repeat center 0}
+#stars ol.three li{width:813px;background:url(images/9.png) no-repeat center 0; margin-bottom:30px;}
+#stars ol.three {padding-top:0px;margin-top:-30px;}
 
 #feature{background:url(images/feature.png) center top}
 #feature main{height:506px;color:white}
