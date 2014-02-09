@@ -6,7 +6,7 @@
 @font-face{font-family:"Open Sans Cond Light";  src:local("Open Sans Cond Light"),   local("Open Sans Condensed Light"), url(fonts/OpenSans-CondLight.ttf) format('truetype');}
 @font-face{font-family:"Century Gothic";        src:local("Century Gothic"), 				 url(fonts/GOTHIC.TTF) format('truetype');}
 @font-face{font-family:"Century Gothic Bold";   src:local("Century Gothic Bold"), 	 url(fonts/GOTHICB.TTF) format('truetype');}
-@font-face{font-family:"PF Din Cond Pro Light"; src:local("PF Din Cond Pro Light"),  url(fonts/pfdintextcondpro-light.TTF) format('truetype');}
+@font-face{font-family:"PFDinTextCondProLight"; src:local("PFDinTextCondProLight"),  url(fonts/pfdintextcondpro-light.TTF) format('truetype');}
 *{padding:0;margin:0}
 body{color:#000;background:#fff;font:16px/24px "Trebuchet MS",Calibri,sans-serif}
 header,main,footer,nav,aside,section,article,figure,figcaption{display:block}
@@ -41,7 +41,7 @@ header #header main>p{position:absolute;bottom:-320px;font-family:"Century Gothi
 
 #stars{background:#f4f4f4}
 #stars ol{text-align:center;list-style:none}
-#stars ol li{position:relative;display:inline-block;width:250px;vertical-align:top;font:20px "PF Din Cond Pro";line-height:26px;color:#545454;padding-top:25px;margin:5px 5px 20px 20px;background:url(images/10.png) no-repeat center 0}
+#stars ol li{position:relative;display:inline-block;width:250px;vertical-align:top;font:20px "PFDinTextCondProLight";line-height:26px;color:#545454;padding-top:25px;margin:5px 5px 20px 20px;background:url(images/10.png) no-repeat center 0}
 #stars ol.three li{width:999px;background:url(images/9.png) no-repeat center 0}
 
 #feature{background:url(images/feature.png) center top}
@@ -55,6 +55,19 @@ header #header main>p{position:absolute;bottom:-320px;font-family:"Century Gothi
 #feature main form fieldset input{width:234px;background:transparent url(images/input.png) center top;padding:3px 5px 4px;font-size:18px;color:white}
 #feature main form fieldset input[type="tel"]{background-position:center 47px;margin-top:6px}
 #feature main form fieldset button{background:#b6b6b6;background:linear-gradient(to bottom, #f7f7f7, #7f7f7f);box-shadow:1px 4px 4px rgba(0,0,0,.7);font-family:"Myriad Pro";font-size:18px;text-transform:uppercase;cursor:pointer;margin-top:20px}
+
+#howwork{background:url(images/howwork.png) center top; height:618px;}
+
+#responses{background:#eeeeee}
+#responses h2{text-align:center;margin-bottom:50px;font:48px "Myriad Pro Cond";text-transform:uppercase;color:#afafaf;font-weight:bold;}
+#responses ol{list-style:none;}
+#responses h4{font:24px "PFDinTextCondProLight";}
+#responses ol li{position:relative;display:block;font:18px "Myriad Pro";min-height:160px;margin:20px 0; font:18px "PFDinTextCondProLight"; color:#323232;}
+.img2{background:url(images/response/2.png)no-repeat right center; text-align:right;padding:0  180px 0 50px} 
+.img3{background:url(images/response/3.png)no-repeat left center; text-align:left; padding:0  50px 0 180px}
+.img1{background:url(images/response/1.png)no-repeat left center; text-align:left; padding:0  50px 0 180px}
+.img4{background:url(images/response/4.png)no-repeat right center; text-align:right;padding:0  180px 0 50px}
+
 
 footer{background:url(images/map.jpg) center top}
 footer main{height:697px}
