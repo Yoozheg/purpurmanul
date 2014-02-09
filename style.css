@@ -57,6 +57,8 @@ padding-left:35px;margin:5px 5px 20px 20px;background:url(images/7.png) no-repea
 #propose ol li{position:relative;display:inline-block;width:420px;vertical-align:top;font:20px "PFDinTextCondProLight";line-height:26px;
 padding-left:35px;margin:5px 5px 20px 20px;background:url(images/7.png) no-repeat left 0}
 
+#pink{background:url(images/7.jpg) center top}
+#pink h2{text-align:center;color:#fafaafa;font:48px
 
 #stars{background:#f4f4f4}
 #stars ol{text-align:center;list-style:none}
