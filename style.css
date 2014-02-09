@@ -38,6 +38,9 @@ header #header main>p{position:absolute;bottom:-320px;font-family:"Century Gothi
 
 #green{background: url(images/green_section_back.png) left top repeat-x; }
 #green main{padding:0 -318px; background:url(images/green_back.jpg) repeat-x;height:543px; text-align:center;}
+#green p{font-family:PFDinTextCondProLight; font-size: 24px; font-weight:lighter; padding-top:20px;}
+#green #count {width:430px;}
+#green form{width:255px;}
 
 #stars{background:#f4f4f4}
 #stars ol{text-align:center;list-style:none}
