@@ -50,12 +50,15 @@ header #header main>p{position:absolute;bottom:-320px;font-family:"Century Gothi
 #propose ol li{position:relative;display:inline-block;width:420px;vertical-align:top;font:20px "PFDinTextCondProLight";line-height:26px;
 padding-left:35px;margin:5px 5px 20px 20px;background:url(images/7.png) no-repeat left 0}
 
-#pink{background:url(images/7.jpg) center top}
-#pink h2{text-align:center;color:#fafaafa;font:48px}
+#pink{background:url(images/7.jpg) center top; height:608px;}
+#pink h2{text-align:center;color:#fafaafa;font:48px "Lobster";color:#fafafa;padding-top:20px;}
+#pink h4{font:24px "Lobster";color:#6e6e6e;}
+#pink ol{text-align:left; list-style:none;margin-top:80px;background:url(images/pink_left.png) no-repeat top left;padding-left:109px;padding-bottom:40px}
+#pink ol li{position:relative;display:inline-block;width:370px;font:22px "Open Sans Cond Light";line-height:22px;color:#fafafa;padding-left:40px;padding-bottom:20px;margin:0px 5px 0px 20px;background:url(images/pink_list.png) no-repeat left 35px}
 
 #stars{background:#f4f4f4}
 #stars ol{text-align:center;list-style:none}
-#stars ol li{position:relative;display:inline-block;width:250px;vertical-align:top;font:20px "PFDinTextCondProLight";line-height:26px;color:#545454;padding-top:25px;margin:5px 5px 20px 20px;background:url(images/10.png) no-repeat center 0}
+#stars ol li{position:relative;display:inline-block;width:250px;vertical-align:top;font:20px "PFDinTextCondProLight";color:#545454;padding-top:25px;margin:5px 5px 20px 20px;background:url(images/10.png) no-repeat center 0}
 #stars ol.three li{width:999px;background:url(images/9.png) no-repeat center 0}
 
 #feature{background:url(images/feature.png) center top}
