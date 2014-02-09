@@ -53,6 +53,14 @@ padding-left:35px;margin:5px 5px 20px 20px;background:url(images/7.png) no-repea
 
 >>>>>>> origin/master
 
+
+#propose{background:#f7f7f7 url(images/6.jpg) center top}
+#propose p{text-align:center;font:24px "PFDinTextCondProLight"; color:#7d7d7d; padding-top:52px;}
+#propose ol{list-style:none;margin-top:110px;}
+#propose ol li{position:relative;display:inline-block;width:420px;vertical-align:top;font:20px "PFDinTextCondProLight";line-height:26px;
+padding-left:35px;margin:5px 5px 20px 20px;background:url(images/7.png) no-repeat left 0}
+
+
 #stars{background:#f4f4f4}
 #stars ol{text-align:center;list-style:none}
 #stars ol li{position:relative;display:inline-block;width:250px;vertical-align:top;font:20px "PFDinTextCondProLight";line-height:26px;color:#545454;padding-top:25px;margin:5px 5px 20px 20px;background:url(images/10.png) no-repeat center 0}
