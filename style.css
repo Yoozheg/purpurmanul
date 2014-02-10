@@ -1,14 +1,14 @@
 @charset "utf-8";
-@font-face{font-family:"Myriad Pro";           src:local("Myriad Pro"),             url(fonts/MyriadPro-Regular.otf)    format('opentype');}
-@font-face{font-family:"Myriad Pro Cond";      src:local("Myriad Pro Cond"),        url(fonts/MyriadPro-Cond.otf)       format('opentype');}
-@font-face{font-family:"Myriad Pro Cond Bold"; src:local("Myriad Pro Cond Bold"),   url(fonts/MyriadPro-CondBold.otf)   format('opentype');}
-@font-face{font-family:"Myriad Pro Cond Italic";src:local("Myriad Pro Cond Italic"), url(fonts/MyriadPro-CondItalic.otf) format('opentype');}
-@font-face{font-family:"Open Sans Cond Light"; src:local("Open Sans Cond Light"),   local("Open Sans Condensed Light"), url(fonts/OpenSans-CondLight.ttf) format('truetype');}
-@font-face{font-family:"Open Sans"; src:local("Open Sans"), url(fonts/OpenSans-Regular.ttf) format('truetype');}
-@font-face{font-family:"Century Gothic";       src:local("Century Gothic"), 				 url(fonts/GOTHIC.TTF) format('truetype');}
-@font-face{font-family:"Century Gothic Bold";  src:local("Century Gothic Bold"), 	 url(fonts/GOTHICB.TTF) format('truetype');}
-@font-face{font-family:"PFDinTextCondProLight";src:local("PFDinTextCondProLight"),  url(fonts/pfdintextcondpro-light.ttf) format('truetype');}
-@font-face{font-family:"Lobster";              src:local("Lobster"),                url(fonts/lobster.ttf) format('truetype');}
+@font-face{font-family:"Myriad Pro";           src:local("Myriad Pro"),             url(fonts/MyriadPro-Regular.otf)                                     format('opentype');}
+@font-face{font-family:"Myriad Pro Cond";      src:local("Myriad Pro Cond"),        url(fonts/MyriadPro-Cond.otf)                                        format('opentype');}
+@font-face{font-family:"Myriad Pro Cond Bold"; src:local("Myriad Pro Cond Bold"),   url(fonts/MyriadPro-CondBold.otf)                                    format('opentype');}
+@font-face{font-family:"Myriad Pro Cond Italic";src:local("Myriad Pro Cond Italic"),url(fonts/MyriadPro-CondItalic.otf)                                  format('opentype');}
+@font-face{font-family:"Open Sans Cond Light"; src:local("Open Sans Cond Light"),   local("Open Sans Condensed Light"),url(fonts/OpenSans-CondLight.ttf) format('truetype');}
+@font-face{font-family:"Open Sans";            src:local("Open Sans"),              url(fonts/OpenSans-Regular.ttf)                                      format('truetype');}
+@font-face{font-family:"Century Gothic";       src:local("Century Gothic"), 				url(fonts/GOTHIC.TTF)                                                format('truetype');}
+@font-face{font-family:"Century Gothic Bold";  src:local("Century Gothic Bold"), 	  url(fonts/GOTHICB.TTF)                                               format('truetype');}
+@font-face{font-family:"PFDinTextCondProLight";src:local("PFDinTextCondProLight"),  url(fonts/pfdintextcondpro-light.ttf)                                format('truetype');}
+@font-face{font-family:"Lobster";              src:local("Lobster"),                url(fonts/lobster.ttf)                                               format('truetype');}
 *{padding:0;margin:0}
 body{color:#000;background:#fff;font:16px/24px "Trebuchet MS",Calibri,sans-serif}
 header,main,footer,nav,aside,section,article,figure,figcaption{display:block}
@@ -33,10 +33,10 @@ header #header form input:valid{background:url(images/valid.png) 212px center no
 header #header form img{cursor:pointer}
 header #header main>p{position:absolute;bottom:-320px;font-family:"Century Gothic Bold";font-size:30px;line-height:40px;color:white;left:0;right:340px;text-align:center}
 
-#it{background: linear-gradient(to bottom, #fff, #f7f1f3);height: 220px;text-align:center;}
-#it h2{font-family: 'Lobster';font-size:60px;font-weight:normal;padding:40px 0;color:#7d7d7d;}
-#it ol{list-style:none;padding: 20px 0;}
-#it ol li{display:inline-block;color:#e29fb1;text-transform:uppercase;text-align:center;font-family:'Myriad Pro Cond';padding: 0 20px;}
+#it{background: linear-gradient(to bottom, #fff, #f7f1f3);height: 220px;text-align:center}
+#it h2{font-family: 'Lobster';font-size:60px;font-weight:normal;padding:40px 0;color:#7d7d7d}
+#it ol{list-style:none;padding: 20px 0}
+#it ol li{display:inline-block;color:#e29fb1;text-transform:uppercase;text-align:center;font-family:'Myriad Pro Cond';padding: 0 20px}
 
 #green{background:url(images/green_section_back.png) left top repeat-x}
 #green main>p{font-family:PFDinTextCondProLight;font-size:24px;font-weight:lighter;padding-top:20px}
@@ -53,40 +53,39 @@ header #header main>p{position:absolute;bottom:-320px;font-family:"Century Gothi
 #green form button:active{background:linear-gradient(to top, #FFCe26, #ff9c00) transparent}
 
 #propose{background:#f7f7f7 url(images/6.jpg) center top}
-#propose p{text-align:center;font:24px "PFDinTextCondProLight";color:#7d7d7d;padding-top:52px;}
-#propose ol{list-style:none;margin-top:110px;}
+#propose p{text-align:center;font:24px "PFDinTextCondProLight";color:#7d7d7d;padding-top:52px}
+#propose ol{list-style:none;margin-top:110px}
 #propose ol li{position:relative;display:inline-block;width:420px;vertical-align:top;font:20px "PFDinTextCondProLight";line-height:26px;padding-left:35px;margin:5px 5px 20px 20px;background:url(images/7.png) no-repeat left 0}
 
-#pink{background:url(images/7.jpg) center top;height:608px;}
-#pink h2{text-align:center;color:#fafafa;font:48px "Lobster";color:#fafafa;padding-top:20px;}
-#pink h4{font:24px "Lobster";color:#6e6e6e;}
+#pink{background:url(images/7.jpg) center top;height:608px}
+#pink h2{text-align:center;color:#fafafa;font:48px "Lobster";color:#fafafa;padding-top:20px}
+#pink h4{font:24px "Lobster";color:#6e6e6e}
 #pink ol{text-align:left;list-style:none;margin-top:80px;background:url(images/pink_left.png) no-repeat top left;padding-left:109px;padding-bottom:40px}
 #pink ol li{position:relative;display:inline-block;width:370px;font:22px "Open Sans Cond Light";line-height:22px;color:#fafafa;padding-left:40px;padding-bottom:20px;margin:0px 5px 0px 20px;background:url(images/pink_list.png) no-repeat left 35px}
 
 #stars{background:#f4f4f4 url(images/8.jpg) center top no-repeat}
-#stars ol{text-align:center;list-style:none;padding-top:35px;}
+#stars ol{text-align:center;list-style:none;padding-top:35px}
 #stars ol li{position:relative;display:inline-block;width:255px;vertical-align:top;font:20px "PFDinTextCondProLight";color:#545454;padding-top:25px;margin:5px 5px 0px 20px;background:url(images/10.png) no-repeat center 0}
-#stars ol.three li{width:813px;background:url(images/9.png) no-repeat center 0;margin-bottom:30px;}
-#stars ol.three {padding-top:0px;margin-top:-30px;}
+#stars ol.three li{width:813px;background:url(images/9.png) no-repeat center 0;margin-bottom:30px}
 
-#present_woman{margin-top:15px;}
+#present_woman{margin-top:15px}
 #present_woman h2{text-align:center;background:url(images/9.jpg) center top no-repeat;padding-top:20px;padding-bottom:60px;font:48px "Myriad Pro Cond";color:#8d8d8d}
-#present_woman h3{text-align:center;font:30px "Open Sans Cond Light";}
-#present_woman ol{list-style:none;}
+#present_woman h3{text-align:center;font:30px "Open Sans Cond Light"}
+#present_woman ol{list-style:none}
 #present_woman li{position:relative;display:inline-block;width:350px;margin:0 70px;margin-bottom:100px}
-#present_woman h4{text-align:right;font:30px "Myriad Pro Cond";}
-#present_woman p{text-align:center;font:18px "Open Sans";margin-bottom:15px;}
-#present_woman p.change_color{text-align:right;font:18px "Arial Narrow";}
-#present_woman span{padding-right:10px;}
-#present_woman img.mini{padding-left:25px;}
+#present_woman h4{text-align:right;font:30px "Myriad Pro Cond"}
+#present_woman p{text-align:center;font:18px "Open Sans";margin-bottom:15px}
+#present_woman p.change_color{text-align:right;font:18px "Arial Narrow"}
+#present_woman span{padding-right:10px}
+#present_woman img.mini{padding-left:25px}
 #present_woman img.color{padding-top:10px;margin-bottom:-10px}
-#present_woman img.button{margin: 0 auto;width:216px;display:block;}
-#present_woman p.add{text-align:center;font:20px "PFDinTextCondProLight";color:#8d8d8d;margin-top:-40px;}
+#present_woman img.button{margin: 0 auto;width:216px;display:block}
+#present_woman p.add{text-align:center;font:20px "PFDinTextCondProLight";color:#8d8d8d;margin-top:-40px}
 
 #present_men{background:url(images/12.jpg)center top no-repeat;padding-top:60px;padding-bottom:45px}
 #present_men h2{text-align:center;background:url(images/9.jpg) center top no-repeat;padding-top:20px;padding-bottom:60px;font:48px "Myriad Pro Cond";color:#8d8d8d}
-#present_men h3{text-align:center;font:30px "Myriad Pro Cond";color:#8d8d8d;}
-#present_men ol{list-style:none;}
+#present_men h3{text-align:center;font:30px "Myriad Pro Cond";color:#8d8d8d}
+#present_men ol{list-style:none}
 #present_men li{position:relative;display:inline-block;width:246px;margin:0;margin-bottom:30px}
 #present_men img.button{margin: 0 auto;display:block}
 
@@ -102,7 +101,7 @@ header #header main>p{position:absolute;bottom:-320px;font-family:"Century Gothi
 #feature main form fieldset input[type="tel"]{background-position:center 47px;margin-top:6px}
 #feature main form fieldset button{background:#b6b6b6;background:linear-gradient(to bottom, #f7f7f7, #7f7f7f);box-shadow:1px 4px 4px rgba(0,0,0,.7);font-family:"Myriad Pro";font-size:18px;text-transform:uppercase;cursor:pointer;margin-top:20px}
 
-#howwork{background:url(images/howwork.png) center top;height:618px;}
+#howwork{background:url(images/howwork.png) center top;height:618px}
 
 #responses{background:#eeeeee}
 #responses h2{text-align:center;margin-bottom:50px;font:48px "Myriad Pro Cond";text-transform:uppercase;color:#afafaf;font-weight:bold}
