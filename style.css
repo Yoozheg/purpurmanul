@@ -4,6 +4,7 @@
 @font-face{font-family:"Myriad Pro Cond Bold";  src:local("Myriad Pro Cond Bold"),   url(fonts/MyriadPro-CondBold.otf)   format('opentype');}
 @font-face{font-family:"Myriad Pro Cond Italic";src:local("Myriad Pro Cond Italic"), url(fonts/MyriadPro-CondItalic.otf) format('opentype');}
 @font-face{font-family:"Open Sans Cond Light";  src:local("Open Sans Cond Light"),   local("Open Sans Condensed Light"), url(fonts/OpenSans-CondLight.ttf) format('truetype');}
+@font-face{font-family:"Open Sans";  src:local("Open Sans"), url(fonts/OpenSans-Regular.ttf) format('truetype');}
 @font-face{font-family:"Century Gothic";        src:local("Century Gothic"), 				 url(fonts/GOTHIC.TTF) format('truetype');}
 @font-face{font-family:"Century Gothic Bold";   src:local("Century Gothic Bold"), 	 url(fonts/GOTHICB.TTF) format('truetype');}
 @font-face{font-family:"PFDinTextCondProLight"; src:local("PFDinTextCondProLight"),  url(fonts/pfdintextcondpro-light.ttf) format('truetype');}
@@ -67,6 +68,20 @@ padding-left:35px;margin:5px 5px 20px 20px;background:url(images/7.png) no-repea
 #stars ol li{position:relative;display:inline-block;width:255px;vertical-align:top;font:20px "PFDinTextCondProLight";color:#545454;padding-top:25px;margin:5px 5px 0px 20px;background:url(images/10.png) no-repeat center 0}
 #stars ol.three li{width:813px;background:url(images/9.png) no-repeat center 0; margin-bottom:30px;}
 #stars ol.three {padding-top:0px;margin-top:-30px;}
+
+#present_woman{margin-top:15px;}
+#present_woman h2{text-align:center; background:url(images/9.jpg) center top no-repeat;padding-top:20px;padding-bottom:60px;font:48px "Myriad Pro Cond";color:#8d8d8d}
+#present_woman h3{text-align:center;font:30px "Open Sans Cond Light";}
+#present_woman li{position:relative;display:inline-block;width:350px;margin:0 70px;margin-bottom:100px}
+#present_woman h4{text-align:right;font:30px "Myriad Pro Cond";}
+#present_woman p{text-align:center;font:18px "Open Sans";margin-bottom:15px;}
+#present_woman p.change_color{text-align:right;font:18px "Arial Narrow";}
+#present_woman span{padding-right:10px;}
+#present_woman img.mini{padding-left:25px;}
+#present_woman img.color{padding-top:10px;margin-bottom:-10px}
+#present_woman img.button{margin: 0 auto;width:216px;display:block;}
+#present_woman p.add{text-align:center;font:20px "PFDinTextCondProLight";color:#8d8d8d; margin-top:-40px;}
+
 
 #feature{background:url(images/feature.png) center top}
 #feature main{height:506px;color:white}
