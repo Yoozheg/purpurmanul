@@ -63,6 +63,7 @@ padding-left:35px;margin:5px 5px 20px 20px;background:url(images/7.png) no-repea
 #stars ol.three li{width:813px;background:url(images/9.png) no-repeat center 0; margin-bottom:30px;}
 #stars ol.three {padding-top:0px;margin-top:-30px;}
 
+#present_woman{margin-top:15px;}
 #present_woman h2{text-align:center; background:url(images/9.jpg) center top no-repeat;padding-top:20px;padding-bottom:60px;font:48px "Myriad Pro Cond";color:#8d8d8d}
 #present_woman h3{text-align:center;font:30px "Open Sans Cond Light";}
 #present_woman li{position:relative;display:inline-block;width:350px;margin:0 70px;margin-bottom:100px}
@@ -73,6 +74,7 @@ padding-left:35px;margin:5px 5px 20px 20px;background:url(images/7.png) no-repea
 #present_woman img.mini{padding-left:25px;}
 #present_woman img.color{padding-top:10px;margin-bottom:-10px}
 #present_woman img.button{margin: 0 auto;width:216px;display:block;}
+#present_woman p.add{text-align:center;font:20px "PFDinTextCondProLight";color:#8d8d8d; margin-top:-40px;}
 
 
 #feature{background:url(images/feature.png) center top}
