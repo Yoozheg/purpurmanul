@@ -96,7 +96,7 @@ padding-left:35px;margin:5px 5px 20px 20px;background:url(images/7.png) no-repea
 
 footer{background:url(images/map.jpg) center top}
 footer main{height:697px}
-footer main form{background:#e2e2e2;width:421px;height:216px;padding:40px 25px 20px}
+footer main form{background:#e2e2e2;width:421px;height:216px;padding:40px 25px 20px;position:absolute;top:185px;left:40px}
 footer main form h4{font-family:"Myriad Pro Cond";font-weight:Lighter;font-size:24px;color:#883a95}
 footer main form input, footer main form textarea{background:white;border:none;box-shadow:2px 4px 2px rgba(0,0,0,.2);padding:10px;border-radius:4px;font-family:"Open Sans Cond";font-size:14px;color:black}
 footer main form input{height:18px;margin:10px 5px}
@@ -104,3 +104,6 @@ footer main form input[type="text"]{width:160px;margin-left:0}
 footer main form input[type="email"]{width:200px;margin-right:0}
 footer main form textarea{display:block;width:395px;height:70px}
 footer main form button{background:#883a95;width:126px;height:40px;text-align:center;color:white;font-family:"Myriad Pro Cond Light";font-size:18px;margin-right:5px;border:none;margin-top:7px;cursor:pointer}
+footer main #contacts{position:absolute;top:150px;left:654px}
+footer main #contacts h3{font-family:Lobster;font-size:30px;color:#7d7d7d;margin-bottom:37px}
+footer main #contacts p{font-family:"Open Sans Cond Light";font-size:20px;color:#7d7d7d;margin-bottom:20px;padding-left:10px}
