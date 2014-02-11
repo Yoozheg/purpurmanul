@@ -161,5 +161,15 @@
 	 {form:'footerform', button:'footerformbutton'}
 	]);
 
+	$('#present_woman img.mini').click(function(e){
+	 var li = $(this.parentNode);
+	 li.find('img.show').toggleClass('show');
+	 var src = this.getAttribute('src').replace('mini/','').replace('m.jpg','.jpg');
+	 li.find('img[src="'+src+'"]').toggleClass('show');
+	});
+	$('#present_woman img.button').click(function(e){
+	 var li = this.parentNode;
+	 alert(li);
+	});
  });
 })(window, document, jQuery);

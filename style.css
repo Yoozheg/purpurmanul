@@ -79,8 +79,8 @@ header #header main>p{position:absolute;bottom:-320px;font-family:"Century Gothi
 #present_woman span{padding-right:10px}
 #present_woman img.big{display:none}
 #present_woman img.show{display:block}
-#present_woman img.mini{padding-left:25px}
-#present_woman img.color{padding-top:10px;margin-bottom:-10px}
+#present_woman img.mini{padding-left:25px;cursor:pointer}
+#present_woman img.color{padding-top:10px;margin-bottom:-10px;cursor:pointer}
 #present_woman img.button{margin: 0 auto;width:216px;display:block;cursor:pointer}
 #present_woman p.add{text-align:center;font:20px "PFDinTextCondProLight";color:#8d8d8d;margin-top:-40px}
 
