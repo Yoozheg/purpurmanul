@@ -19,18 +19,19 @@ header,main,footer,nav,aside,section,article,figure,figcaption{display:block}
 main{width:999px;margin:0 auto;position:relative}
 header{height:856px;background:transparent url(images/top.png) center top no-repeat}
 header #top{height:137px;background:rgba(0,0,0,.7) url(images/logo.png) center center no-repeat;color:white}
-header #top h2{font-family:"Century Gothic";font-size:24px;padding-top:40px}
+header #top h2{font-family:"Century Gothic Bold";font-size:24px;padding-top:40px}
 header #top h1{font-family:"Myriad Pro Cond Bold";font-size:48px;text-transform:uppercase;padding-top:40px}
-header #top p{font-family:"Myriad Pro Cond";font-size:24px}
+header #top p{font-family:"Myriad Pro Cond";font-size:24px;margin-top:3px}
 header #top div img{cursor:pointer;margin-top:6px}
 header #header div{text-align:center;margin-top:90px;color:white;background:rgba(0,0,0,.5);padding:30px 0}
 header #header div h1{font-family:"Century Gothic Bold";font-size:65px;line-height:65px}
 header #header div p{font-family:"Century Gothic";font-size:24px;margin-top:20px}
-header #header form{width:228px;height:148px;background:url(images/topform.png) top left no-repeat;margin-top:60px;margin-right:30px;padding:90px 39px 0}
-header #header form input{width:228px;height:24px;background:transparent url(images/topforminput.jpg) top left no-repeat;font-size:18px;padding:4px 5px;color:white;border:none;margin:5px 0}
-header #header form input:focus:invalid{background:url(images/invalid.png) 212px center no-repeat,transparent url(images/topforminput.jpg) top left no-repeat}
-header #header form input:valid{background:url(images/valid.png) 212px center no-repeat,transparent url(images/topforminput.jpg) top left no-repeat}
-header #header form img{cursor:pointer}
+header #header form{margin-top:60px;margin-right:30px}
+#splashform,header #header form{width:228px;height:148px;background:url(images/topform.png) top left no-repeat;padding:90px 39px 0}
+#splashform input,header #header form input{width:228px;height:24px;background:transparent url(images/topforminput.jpg) top left no-repeat;font-size:18px;padding:4px 5px;color:white;border:none;margin:5px 0}
+#splashform input:focus:invalid,header #header form input:focus:invalid{background:url(images/invalid.png) 212px center no-repeat,transparent url(images/topforminput.jpg) top left no-repeat}
+#splashform input:valid,header #header form input:valid{background:url(images/valid.png) 212px center no-repeat,transparent url(images/topforminput.jpg) top left no-repeat}
+#splashform img,header #header form img{cursor:pointer}
 header #header main>p{position:absolute;bottom:-320px;font-family:"Century Gothic Bold";font-size:30px;line-height:40px;color:white;left:0;right:340px;text-align:center}
 
 #it{background: linear-gradient(to bottom, #fff, #f7f1f3);height: 220px;text-align:center}
@@ -40,7 +41,7 @@ header #header main>p{position:absolute;bottom:-320px;font-family:"Century Gothi
 
 #green{background:url(images/green_section_back.png) left top repeat-x}
 #green main>p{font-family:PFDinTextCondProLight;font-size:24px;font-weight:lighter;padding-top:20px}
-#green>main>div{background:url(images/green_back.jpg) repeat-x;height:543px;text-align:center;width:1631px;margin-left:-316px}
+#green>main>div{background:url(images/green_back.jpg) repeat-x;height:543px;text-align:center;width:1920px;margin-left:-461px} /*width:1631px; margin-left:-316px*/
 #green>main>div>main>div{background:url(images/green_bottom.png) bottom center no-repeat,url(images/green_left.png) left top no-repeat;height:306px;padding-top:70px}
 #green h2{font-family:"PFDinTextCondProLight";font-size:36px;line-height:36px;text-align:left;margin-left:320px}
 #green h2 span.price{font-size:48px;line-height:48px;color:white;margin-left:10px}
@@ -130,3 +131,7 @@ footer main form button{background:#883a95;width:126px;height:40px;text-align:ce
 footer main #contacts{position:absolute;top:150px;left:654px}
 footer main #contacts h3{font-family:Lobster;font-size:30px;color:#7d7d7d;margin-bottom:37px}
 footer main #contacts p{font-family:"Open Sans Cond Light";font-size:20px;color:#7d7d7d;margin-bottom:20px;padding-left:10px}
+
+#splash{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.8);color:white;text-shadow:0 0 1px #666}
+#splash main{text-align:center;top:250px}
+#splashform{margin:0 auto 0}

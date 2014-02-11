@@ -158,7 +158,8 @@
 	 {form:'topform', button:'topformbutton'},
 	 {form:'greenform', button:'greenformbutton'},
 	 {form:'featureform', button:'featureformbutton'},
-	 {form:'footerform', button:'footerformbutton'}
+	 {form:'footerform', button:'footerformbutton'},
+	 {form:'splashform', button:'splashformbutton'}
 	]);
 
 	$('#present_woman img.mini').click(function(e){
@@ -176,7 +177,8 @@
 	 var li = $(this.parentNode);
 	 var color = li.find('img.color.selected');
 	 color = $.trim(color.attr("class").replace('selected','').replace('color',''));
-	 alert("Выбранный цвет - "+color);
+	 var present = li.find('h3').html();
+	 alert("Название подарка - "+present+"\n"+"Выбранный цвет - "+color);
 	});
  });
 })(window, document, jQuery);
