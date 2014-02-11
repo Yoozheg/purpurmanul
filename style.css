@@ -134,4 +134,5 @@ footer main #contacts p{font-family:"Open Sans Cond Light";font-size:20px;color:
 
 #splash{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.8);color:white;text-shadow:0 0 1px #666;display:none}
 #splash main{text-align:center;top:250px}
+#splash p{color:white;text-align:center}
 #splashform{margin:0 auto 0}

@@ -107,6 +107,11 @@
    return dst;
   }
  
+ function closeSplash(){
+  $('#splash').hide();
+  $('#splash p').innerHTML = '';
+  window.data = {};
+ }
  function getFormData(form, clean){
   var data = [], inputs = $(form).find('input'), textareas = $(form).find('textarea');
 	for(var i = 0; i < inputs.length; ++i){
@@ -140,8 +145,7 @@
   copy(data, window.data);
   ajax(data, 'server.php', function(r){
    alert(r);
-   $('#splash').hide();
-   window.data = {};
+   closeSplash();
   });
  }
  function initForm(form, button){
@@ -187,7 +191,7 @@
 	 {form:'splashform', button:'splashformbutton'}
 	]);
 
-	$('#splash').click(function(e){$(this).hide();window.data = {}})
+	$('#splash').click(closeSplash);
 	$('header #top div img').click(function(e){$('#splash').show()});
 	$('#present_woman img.mini').click(function(e){
 	 var li = $(this.parentNode);
@@ -205,8 +209,20 @@
 	 var color = li.find('img.color.selected');
 	 color = $.trim(color.attr("class").replace('selected','').replace('color',''));
 	 var present = li.find('h3').html();
+	 $('#splash p').text("Название подарка - "+present+"; "+"Выбранный цвет - "+color);
    window.data = {present:present, color:color};
    $('#splash').show();
 	});
+  $('#present_men li').click(function(e){
+   $('#present_men li.selected').toggleClass('selected');
+   $(this).toggleClass('selected');
+  });
+  $('#present_men .button').click(function(e){
+   var li = $('#present_men li.selected');
+   var present = li.find('h3').html();
+   window.data = {present:present};
+   $('#splash').show();
+   $('#splash p').text("Название подарка - "+present);
+  });
  });
 })(window, document, jQuery);
