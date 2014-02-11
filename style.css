@@ -77,6 +77,8 @@ header #header main>p{position:absolute;bottom:-320px;font-family:"Century Gothi
 #present_woman p{text-align:center;font:18px "Open Sans";margin-bottom:15px}
 #present_woman p.change_color{text-align:right;font:18px "Arial Narrow"}
 #present_woman span{padding-right:10px}
+#present_woman img.big{display:none}
+#present_woman img.show{display:block}
 #present_woman img.mini{padding-left:25px}
 #present_woman img.color{padding-top:10px;margin-bottom:-10px}
 #present_woman img.button{margin: 0 auto;width:216px;display:block;cursor:pointer}
