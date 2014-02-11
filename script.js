@@ -97,7 +97,21 @@
    segments: a.pathname.replace(/^\//,'').split('/')
   };
  }
+ function copy(dst){
+   for(var i = 1; i < arguments.length; ++i){
+    var obj = arguments[i];
+    for(var key in obj){
+     dst[key] = obj[key];
+    }
+   }
+   return dst;
+  }
  
+ function closeSplash(){
+  $('#splash').hide();
+  $('#splash p').innerHTML = '';
+  window.data = {};
+ }
  function getFormData(form, clean){
   var data = [], inputs = $(form).find('input'), textareas = $(form).find('textarea');
 	for(var i = 0; i < inputs.length; ++i){
@@ -128,12 +142,18 @@
 	return adaptedData;
  }
  function sendData(data){
+  copy(data, window.data);
   ajax(data, 'server.php', function(r){
    alert(r);
+   closeSplash();
   });
  }
  function initForm(form, button){
   function submit(e){
+   var fields = $('#'+form).find('input:required');
+   for(var i=0;i<fields.length;++i){
+    if($.trim(fields[i].value).length == 0) return alert('Одно из полей не заполнено!');
+   }
 	 var data = getFormData('#'+form, true);
 	 data = adaper(data);
 	 sendData(data)
@@ -142,7 +162,15 @@
    e.cancelBubble = true;
 	 return false;
 	}
+  function stop(e){
+   e.preventDefault();
+   e.stopPropagation();
+   e.cancelBubble = true;
+	 return false;
+  }
 	if(button) $('#'+button).click(submit);
+  $('#'+form).find('input').click(stop);
+  $('#'+form).find('textarea').click(stop);
 	$('#'+form).submit(submit);
  }
  function initForms(inits){
@@ -153,14 +181,18 @@
  
  
  $(document).ready(function(){
+  window.data = {};
   $('#countdown').countdown(countdownObj);
 	initForms([
 	 {form:'topform', button:'topformbutton'},
 	 {form:'greenform', button:'greenformbutton'},
 	 {form:'featureform', button:'featureformbutton'},
-	 {form:'footerform', button:'footerformbutton'}
+	 {form:'footerform', button:'footerformbutton'},
+	 {form:'splashform', button:'splashformbutton'}
 	]);
 
+	$('#splash').click(closeSplash);
+	$('header #top div img').click(function(e){$('#splash').show()});
 	$('#present_woman img.mini').click(function(e){
 	 var li = $(this.parentNode);
 	 li.find('img.show').toggleClass('show');
@@ -176,7 +208,21 @@
 	 var li = $(this.parentNode);
 	 var color = li.find('img.color.selected');
 	 color = $.trim(color.attr("class").replace('selected','').replace('color',''));
-	 alert("Выбранный цвет - "+color);
+	 var present = li.find('h3').html();
+	 $('#splash p').text("Название подарка - "+present+"; "+"Выбранный цвет - "+color);
+   window.data = {present:present, color:color};
+   $('#splash').show();
 	});
+  $('#present_men li').click(function(e){
+   $('#present_men li.selected').toggleClass('selected');
+   $(this).toggleClass('selected');
+  });
+  $('#present_men .button').click(function(e){
+   var li = $('#present_men li.selected');
+   var present = li.find('h3').html();
+   window.data = {present:present};
+   $('#splash').show();
+   $('#splash p').text("Название подарка - "+present);
+  });
  });
 })(window, document, jQuery);

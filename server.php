@@ -12,6 +12,8 @@
  $phone = getStr('phone');
  $email = getStr('email');
  $comment = getStr('comment');
+ $present = getStr('present');
+ $color = getStr('color');
 
  $site = "PurPurManul";
  $subject = "Заявка с сайта " . $site;
@@ -20,6 +22,8 @@
  
  if($email)   $mes .= "\nАдрес электронный почты: " . $email;
  if($comment) $mes .= "\nКомментарий: " . $comment;
+ if($present) $mes .= "\nПодарок: " . $present;
+ if($color)   $mes .= "\nЦвет: " . $color;
  
  $additional = "Content-type:text/plain;charset = UTF-8\r\nFrom: " . $site;
  if($email) $additional .= "\r\nReply-To: " . $email;
