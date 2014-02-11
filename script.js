@@ -167,9 +167,16 @@
 	 var src = this.getAttribute('src').replace('mini/','').replace('m.jpg','.jpg');
 	 li.find('img[src="'+src+'"]').toggleClass('show');
 	});
+	$('#present_woman img.color').click(function(e){
+	 var li = $(this.parentNode);
+	 li.find('img.selected').toggleClass('selected');
+	 $(this).toggleClass('selected');
+	});
 	$('#present_woman img.button').click(function(e){
-	 var li = this.parentNode;
-	 alert(li);
+	 var li = $(this.parentNode);
+	 var color = li.find('img.color.selected');
+	 color = $.trim(color.attr("class").replace('selected','').replace('color',''));
+	 alert("Выбранный цвет - "+color);
 	});
  });
 })(window, document, jQuery);

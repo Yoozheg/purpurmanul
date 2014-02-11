@@ -10,7 +10,7 @@
 @font-face{font-family:"PFDinTextCondProLight";src:local("PFDinTextCondProLight"),  url(fonts/pfdintextcondpro-light.ttf)                                format('truetype');}
 @font-face{font-family:"Lobster";              src:local("Lobster"),                url(fonts/lobster.ttf)                                               format('truetype');}
 *{padding:0;margin:0}
-body{color:#000;background:#fff;font:16px/24px "Trebuchet MS",Calibri,sans-serif}
+body{color:#000;background:#fff;font:16px/24px "Trebuchet MS",Calibri,sans-serif;min-width:999px;overflow-x:hidden}
 header,main,footer,nav,aside,section,article,figure,figcaption{display:block}
 .clear{clear:both}
 .left{float:left}
