@@ -162,6 +162,8 @@
 	 {form:'splashform', button:'splashformbutton'}
 	]);
 
+	$('#splash').click(function(e){$(this).hide()})
+	$('header #top div img').click(function(e){$('#splash').show()});
 	$('#present_woman img.mini').click(function(e){
 	 var li = $(this.parentNode);
 	 li.find('img.show').toggleClass('show');
