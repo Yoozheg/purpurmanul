@@ -97,6 +97,15 @@
    segments: a.pathname.replace(/^\//,'').split('/')
   };
  }
+ function copy(dst){
+   for(var i = 1; i < arguments.length; ++i){
+    var obj = arguments[i];
+    for(var key in obj){
+     dst[key] = obj[key];
+    }
+   }
+   return dst;
+  }
  
  function getFormData(form, clean){
   var data = [], inputs = $(form).find('input'), textareas = $(form).find('textarea');
@@ -128,12 +137,19 @@
 	return adaptedData;
  }
  function sendData(data){
+  copy(data, window.data);
   ajax(data, 'server.php', function(r){
    alert(r);
+   $('#splash').hide();
+   window.data = {};
   });
  }
  function initForm(form, button){
   function submit(e){
+   var fields = $('#'+form).find('input:required');
+   for(var i=0;i<fields.length;++i){
+    if($.trim(fields[i].value).length == 0) return alert('Одно из полей не заполнено!');
+   }
 	 var data = getFormData('#'+form, true);
 	 data = adaper(data);
 	 sendData(data)
@@ -142,7 +158,15 @@
    e.cancelBubble = true;
 	 return false;
 	}
+  function stop(e){
+   e.preventDefault();
+   e.stopPropagation();
+   e.cancelBubble = true;
+	 return false;
+  }
 	if(button) $('#'+button).click(submit);
+  $('#'+form).find('input').click(stop);
+  $('#'+form).find('textarea').click(stop);
 	$('#'+form).submit(submit);
  }
  function initForms(inits){
@@ -153,6 +177,7 @@
  
  
  $(document).ready(function(){
+  window.data = {};
   $('#countdown').countdown(countdownObj);
 	initForms([
 	 {form:'topform', button:'topformbutton'},
@@ -162,7 +187,7 @@
 	 {form:'splashform', button:'splashformbutton'}
 	]);
 
-	$('#splash').click(function(e){$(this).hide()})
+	$('#splash').click(function(e){$(this).hide();window.data = {}})
 	$('header #top div img').click(function(e){$('#splash').show()});
 	$('#present_woman img.mini').click(function(e){
 	 var li = $(this.parentNode);
@@ -180,7 +205,8 @@
 	 var color = li.find('img.color.selected');
 	 color = $.trim(color.attr("class").replace('selected','').replace('color',''));
 	 var present = li.find('h3').html();
-	 alert("Название подарка - "+present+"\n"+"Выбранный цвет - "+color);
+   window.data = {present:present, color:color};
+   $('#splash').show();
 	});
  });
 })(window, document, jQuery);
