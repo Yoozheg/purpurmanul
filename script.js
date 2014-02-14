@@ -1,6 +1,17 @@
 (function(window, document, $, undefined){
  "use strict";
- var countdownObj  = {timestamp: (new Date(2014,1,14))}; // 2014 февраль 14 == 2014,1,14 // месяцы начинаются с 0, т.е., январь - 0, декабрь - 11
+ var startDate = new Date(2014,1,14), currentDate = new Date(), diffDate, timeZoneOffset, timestamp = startDate;
+ currentDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate());
+ if(currentDate >= startDate){
+  diffDate = Math.ceil((currentDate.getTime() - startDate.getTime())/(1000*60*60*24)); // разница в днях
+	var mod = diffDate % 5;
+	if(mod > 0){
+	 currentDate.setDate(currentDate.getDate() - mod);
+	}
+	currentDate.setDate(currentDate.getDate() + 5);
+	timestamp = currentDate;
+ }
+ var countdownObj  = {timestamp: timestamp}; // 2014 февраль 14 == 2014,1,14 // месяцы начинаются с 0, т.е., январь - 0, декабрь - 11
  
  function ajax(text, addr, callback, params){
   var req = (parseURL(addr).host === window.location.hostname) ? new XMLHttpRequest() : (function(XHR){return new XHR()})(window.XDomainRequest || window.XMLHttpRequest);
